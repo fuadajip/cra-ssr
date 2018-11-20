@@ -47,7 +47,7 @@ export default (req, res, next) => {
       .replace('<div id="root"></div>', `<div id="root">${html}</div>`)
       .replace(/<title>.*?<\/title>/g, helmet.title.toString())
       .replace("</head>", `${helmet.meta.toString()}</head>`);
-    console.log(injectHTML);
+    // console.log(injectHTML);
     return res.send(injectHTML);
   });
 };

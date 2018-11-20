@@ -2,6 +2,7 @@ import express from "express";
 
 import renderer from "./renderer";
 const path = require("path");
+const prerender = require("prerender-node");
 
 const PORT = process.env.PORT || 3030;
 const app = express();
@@ -18,6 +19,7 @@ router.use(
 // any other route should be handled by react-router, so serve the index page
 router.use("*", renderer);
 
+app.use(prerender);
 app.use(router);
 
 app.listen(PORT, () => {
