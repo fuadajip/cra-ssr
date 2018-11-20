@@ -18,7 +18,7 @@
   },
   "scripts": {
     "start-ssr": "npm-run-all -s build server",
-    "server": "nodemon server",
+    "server": "NODE_ENV=production node server",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
