@@ -13,12 +13,13 @@ class Home extends Component {
           />
           <meta
             itemprop="image"
-            content="https://allabouttheatre.org/wp-content/uploads/2018/03/Simba.jpg"
+            content="https://upload.wikimedia.org/wikipedia/en/c/cf/YoungSimbaSmilestlk.png"
           />
           <meta property="og:title" content="Home" />
+          <meta property="og:type" content="Website" />
           <meta
             property="og:image"
-            content="https://allabouttheatre.org/wp-content/uploads/2018/03/Simba.jpg"
+            content="https://upload.wikimedia.org/wikipedia/en/c/cf/YoungSimbaSmilestlk.png"
           />
           <meta
             property="og:description"
