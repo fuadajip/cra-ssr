@@ -41,14 +41,13 @@ export default (req, res, next) => {
 
     // get HTML headers
     const helmet = Helmet.renderStatic();
+    // console.log(helmet.meta.toString());
     // inject  the rendered app into html
-    return res.send(
-      htmlData
-        .replace('<div id="root"></div>', `<div id="root">${html}</div>`)
-        .replace(
-          "<title></title>",
-          helmet.title.toString() + helmet.meta.toString()
-        )
-    );
+    const injectHTML = htmlData
+      .replace('<div id="root"></div>', `<div id="root">${html}</div>`)
+      .replace(/<title>.*?<\/title>/g, helmet.title.toString())
+      .replace("</head>", `${helmet.meta.toString()}</head>`);
+    console.log(injectHTML);
+    return res.send(injectHTML);
   });
 };
