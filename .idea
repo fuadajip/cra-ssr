@@ -1,0 +1,36 @@
+Our web repo is currently messed up. Components & UI Components are not arranged as it should.
+From now on the project structure should be similar to this:
+src/
+web-ui/
+shared
+feature_1
+Input/
+Input.js
+Input.scss
+
+feature_2
+feature_3
+
+app/
+shared/
+utils/
+services
+feature_1
+shared
+components
+Form
+Form.js
+FormComponent.js
+Form.scss
+action
+reducer
+FeatureOne.js
+feature_2
+shared
+components
+action
+reducer
+FeatureTwo.js
+feature_3
+
+web-ui should only contain a class or stateless component without any function files, no redux, just pure react.
