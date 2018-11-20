@@ -33,7 +33,7 @@ class About extends Component {
           />
           <meta
             name="twitter:image"
-            content="https://allabouttheatre.org/wp-content/uploads/2018/03/Simba.jpg"
+            content="https://upload.wikimedia.org/wikipedia/en/c/cf/YoungSimbaSmilestlk.png"
           />
         </Helmet>
         <div>About page</div>
